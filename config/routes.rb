@@ -6,6 +6,7 @@ Vcruit::Application.routes.draw do
   
   get '/user/', to: 'users#show', as: '/user/'
   
+  get 'welcome', to: 'users#welcome'
 
   
   
