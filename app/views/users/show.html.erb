@@ -1,0 +1,21 @@
+<div class="span4 well">
+	<div class="row">
+		<div class="span1"><a href="http://critterapp.pagodabox.com/others/admin" class="thumbnail"><img src="http://critterapp.pagodabox.com/img/user.jpg" alt=""></a></div>
+		<div class="span3">
+			 <%= form_for(current_user) do |f| %>
+			<p><%= f.label :user_name %></p>
+          	<p><strong><%= @current_user.user_name%></strong></p>
+			
+			<p><%= f.label :email %></p>
+          	<p><strong><%= @current_user.email %></strong></p>
+			
+			 <% end %>
+			
+		</div>
+	</div>
+	<%= link_to 'Edit', edit_user_path(@user) %> |
+	<%= link_to 'Back', user_path %>
+
+</div>
+
+

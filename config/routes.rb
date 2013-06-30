@@ -4,6 +4,11 @@ Vcruit::Application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
   
+  get '/user/', to: 'users#show', as: '/user/'
+  
+
+  
+  
   resources :static_pages
   resources :sessions
   resources :users
